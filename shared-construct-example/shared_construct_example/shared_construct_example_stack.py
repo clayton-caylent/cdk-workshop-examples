@@ -19,3 +19,10 @@ class SharedConstructExampleStack(cdk.Stack):
             vpc_name="dev-vpc",
             rds_name="dev-rds"
         )
+
+        RDSInstance(self, "dev2",
+            env="dev",
+            vpc_name="dev-vpc",
+            rds_name="dev2-rds"
+        )
+
